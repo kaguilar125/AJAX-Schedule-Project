@@ -6,41 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Where Should I Be Right Now?</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the separate CSS file -->
 </head>
+
 <body>
     <header>
-      <div class="container">
-        <h1 class="text-center my-4">Kevins Class Schedule</h1>
-        <div class="form-group mb-4">
-          <label for="dayInput" class="form-label">Select Day (A-G):</label>
-          <div class="input-group">
-            <input type="text" id="dayInput" class="form-control" placeholder="Enter a day (A-G)">
-            <button id="submitDay" class="btn btn-primary">Show Schedule</button>
-          </div>
+        <div class="container">
+            <h1 class="text-center">Kevins Class Schedule</h1>
+            <div class="form-group">
+                <label for="dayInput" class="A1">Select Day (A-G):</label>
+                <div class="input-group">
+                    <input type="text" id="dayInput" class="form-control" placeholder="Enter a day (A-G)">
+                    <button id="submitDay" class="btn btn-primary">Show Schedule</button>
+                </div>
+            </div>
+            <div class="schedule mt-4">
+                <h3 class="text-center mb-3">Your Schedule for the Day</h3>
+                <div id="scheduleList" class="table-responsive">
+                    
+                </div>
+            </div>
         </div>
-        <div class="schedule mt-4">
-          <h3 class="text-center mb-3">Your Schedule for the Day</h3>
-          <table class="table table-bordered table-striped text-center">
-            <thead class="table-dark">
-              <tr>
-                <th>Period</th>
-                <th>Time</th>
-                <th>Class</th>
-                <th>Teacher</th>
-                <th>Room</th>
-              </tr>
-            </thead>
-            <tbody id="scheduleList">
-              <tr>
-                <td colspan="5" class="text-muted">A day? B day? Enter a day to see your schedule!</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
     </header>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
-  </body>
+</body>
+
 </html>

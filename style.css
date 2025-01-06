@@ -1,0 +1,22 @@
+#scheduleList {
+    display: block;
+}
+
+#scheduleList .row {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+#scheduleList .col-2, .col-4 {
+    flex: 1;
+    padding: 5px;
+}
+
+#scheduleList .col-2 {
+    width: 20%;
+}
+
+#scheduleList .col-4 {
+    width: 40%;
+}
